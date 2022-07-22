@@ -1,0 +1,8 @@
+#!/usr/bin/env Rscript
+library(devtools)
+library(roxygen2)
+# load lib
+load_all(".")
+# unload lib
+detach("package:SCCTempConverter", unload=TRUE)
+# make help file
