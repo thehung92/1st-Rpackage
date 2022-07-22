@@ -1,5 +1,11 @@
-Package: SCCTempConverter
+Package: misc-Rpackage
 Type: Package
-Title: Temperature Conversion Package for Demonstration
+Title: multiple small function for my first package
 Version: 0.0.1.0
 RoxygenNote: 7.2.1
+Imports:
+  data.table
+  dplyr
+Depends: 
+    R (>= 2.10)
+LazyData: true
