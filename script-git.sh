@@ -3,7 +3,7 @@
 # cd $working_dir
 git init
 git add .
-git commit -m 'my first commit' -a v0.1.0
+git commit -m 'my first commit' -a
 git remote add origin https://github.com/thehung92/misc-Rpackage.git
 git branch -M  "main"
 git push -u origin "main"
