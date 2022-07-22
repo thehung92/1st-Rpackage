@@ -23,20 +23,23 @@ knitr::opts_knit$set(root.dir = "/Users/hung/Data/side-project/misc-Rpackage/")
 ## create a df to plot
 
 ```{r}
-df <- data.frame(dose=c("D0.5", "D1", "D2"),
-                len=c(4.2, 10, 29.5))
+df <- ToothGrowth %>%
+  mutate(dose=as.factor(dose))
 ```
 
 ## plot with theme
 
 ```{r}
-p <- ggplot(data=df, aes(x=dose, y=len)) +
-  geom_bar(stat="identity")
-
+p <- ggplot(df, aes(x=dose, y=len, group=dose, color=dose)) +
+  geom_boxplot()
+#
 p + theme(text=element_text(family="sans", size=6),
         panel.background=element_rect(fill=NA),
         panel.border=element_rect(fill=NA, size=0.25, color="black"),
-        panel.grid=element_line(size=0.1, color="grey75"))
+        panel.grid=element_line(size=0.1, color="grey75"),
+        legend.key.size=unit(c(9,9), "points"),
+        legend.key = element_rect(fill=NA)
+        )
 ```
 
 ## test function

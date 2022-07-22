@@ -14,5 +14,8 @@ theme_misc <- function() {
   ggplot2::theme(text=element_text(family="sans", size=6),
                  panel.background=element_rect(fill=NA),
                  panel.border=element_rect(fill=NA, size=0.25, color="black"),
-                 panel.grid=element_line(size=0.1, color="grey75"))
+                 panel.grid=element_line(size=0.1, color="grey75"),
+                 legend.key.size=unit(c(9,9), "points"),
+                 legend.key = element_rect(fill=NA)
+                 )
 }
