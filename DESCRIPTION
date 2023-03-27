@@ -3,6 +3,7 @@ Type: Package
 Title: multiple small function for my first package
 Version: 0.0.1.0
 RoxygenNote: 7.2.1
+Encoding: UTF-8
 Imports:
   data.table,
   dplyr,
@@ -10,3 +11,7 @@ Depends:
     R (>= 2.10),
     tidyverse,
 LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: MIT + file LICENSE
