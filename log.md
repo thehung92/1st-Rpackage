@@ -5,7 +5,7 @@
 ```shell
 # fast sync
 git add .
-git commit -m "rewrite the package"
+git commit -m "edit dependencies"
 git push
 
 
