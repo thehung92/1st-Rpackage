@@ -3,3 +3,4 @@
 ^script\.R
 notebook*
 ^LICENSE\.md$
+^README\.Rmd$

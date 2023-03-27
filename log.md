@@ -5,13 +5,13 @@
 ```shell
 # fast sync
 git add .
-git commit -m "update readme"
+git commit -m "rewrite the package"
 git push
 
 
 # remove synced file and ignore future sync # this keep the file on local
 # echo "*.Rproj" >> .gitignore # add ingore rule for future `git add .`
-git rm --cached *.Rproj # only remove from remote
+git rm --cached .Rhistory # only remove from remote
 git rm script-git.sh # remove in local too
 # git status # to check that the file is removed from the staging area
 git commit -m "remove more stuff from remote repos" && git push

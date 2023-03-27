@@ -1,3 +1,4 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
+test_that("plot works", {
+  p = ggplot_dual_yaxis(mtcars, "cyl", "mpg", "disp")
+  expect_true(is.ggplot(p))
 })
