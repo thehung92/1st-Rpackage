@@ -14,4 +14,5 @@ ggplot object
 }
 \description{
 using sec_axis() with automatic scale function
+use stat_summary to plot the mean grouped by x_axis value
 }

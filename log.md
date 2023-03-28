@@ -5,7 +5,7 @@
 ```shell
 # fast sync
 git add .
-git commit -m "edit dependencies"
+git commit -am "edit dependencies"
 git push
 
 
