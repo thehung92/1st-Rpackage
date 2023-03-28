@@ -5,7 +5,7 @@
 ```shell
 # fast sync
 git add .
-git commit -am "edit dependencies"
+git commit -am "use stat_summary for dual yaxis plot"
 git push
 
 

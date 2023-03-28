@@ -36,8 +36,10 @@ ggplot_dual_yaxis <- function(df, X, Y1, Y2) {
   }
   # # X = "cyl" ; Y1 = "mpg" ; Y2 = "disp"
   p = ggplot(df, aes(x = .data[[X]])) +
-    stat_summary(aes(y = .data[[Y1]], color = Y1), fun.data = median.quartile, geom = "pointrange") +
-    stat_summary(aes(y = scale_function(.data[[Y2]], scale, shift), color =Y2), geom = "pointrange") +
+    stat_summary(aes(y = .data[[Y1]], color = Y1),
+                 fun.data = median.quartile, geom = "pointrange") +
+    stat_summary(aes(y = scale_function(.data[[Y2]], scale, shift), color =Y2),
+                 fun.data = median.quartile, geom = "pointrange") +
     scale_color_manual(values = vt.color) +
     scale_y_continuous(sec.axis = sec_axis( ~inv_scale_function(., scale, shift), name = Y2)) +
     theme(axis.title.y.left = element_text(color = vt.color[Y1]),
